@@ -1,0 +1,441 @@
+/***** BASE STYLES *****/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #3e3e3e;
+}
+
+p {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 0 0;
+}
+
+a, a:link, a:visited {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container-fluid, .row {
+  padding: 0;
+  margin: 0;
+  min-width: 350px;
+}
+
+/***** HEADER / HERO AREA STYLES *****/
+
+.hero {
+  background: url('../img/hero.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  max-width: 50%;
+  text-align: left;
+}
+
+.logo-top, .logo-bottom {
+  max-width: 100%;
+  padding: 20px;
+  position: absolute;
+}
+
+.logo-top {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.fade-in-text {
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.welcome {
+  font-weight: 800;
+  font-size: 64px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.welcome-name {
+  font-size: 60px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.hero-btn {
+  background: #ab5ed0;
+  border: none;
+  padding: 10px;
+  margin: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-btn:hover {
+  background: #613476;
+  border: none;
+  text-decoration: none;
+}
+
+
+/***** MAIN STYLES *****/
+
+/** Description Sections **/
+
+.arrow-link, .arrow-link:link, .arrow-link:visited {
+  color: #613476;
+}
+
+.description {
+  padding: 50px 60px;
+}
+
+.hikers-text h2 {
+  color: #613476;
+}
+
+.hikers {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hikers-img {
+  width: 100%;
+}
+
+.reviews {
+  padding: 50px 50px 50px 80px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stars {
+  color: #ff7118;
+}
+
+/** Banner Sections **/
+
+.banner-1 {
+  background: url('../img/banner-1.jpg') center no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  padding: 100px;
+}
+
+.banner-2 {
+  background: url('../img/banner-2.jpg') center no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  padding: 30px 20px 30px 50px;
+}
+
+.banner-1 h2, .banner-2 h2 {
+  color: #613476;
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+
+.banner h2 {
+  font-size: 48px;
+}
+
+.banner-btn {
+  background: #ff7118;
+  border: none;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.banner-btn:hover {
+  background: #ffca26;
+  border: none;
+  text-decoration: none;
+}
+
+.banner-2-content {
+  max-width: 50%;
+  float: right;
+}
+
+/** Features **/
+
+.features {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 500px;
+}
+
+.features img {
+  max-width: 40%;
+}
+
+.features p {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 10px;
+  min-height: 100px;
+}
+
+ul {
+  float: left;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.features-img {
+  border: 1px solid #b878d6;
+  border-radius: 50%;
+  padding: 25px 0px;
+}
+
+.features-img:hover {
+  border: 1px solid #fdcf3f;
+}
+
+/** Testimonial Carousel **/
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-item h3 {
+  color: #613476;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.carousel {
+  padding: 20px 0;
+}
+
+.carousel-item {
+  padding: 25px 0;
+}
+
+.carousel-item p {
+  padding: 5px 80px;
+}
+
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #ffc718;
+}
+
+
+/***** FOOTER / SOCIAL MEDIA STYLES *****/
+
+footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  color: #616161;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+footer img {
+  max-width: 5%;
+  margin: 0 10px 10px;
+}
+
+.icon {
+  background-color: #b29cbc;
+  border-radius: 15px;
+  max-width: 8%;
+}
+
+.icon:hover {
+  background-color:#f9f9f9 !important;
+  @include transition;
+}
+
+.icon:hover {
+  -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -o-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  transform:scale(1.2);
+  color:#f9f9f9;
+  @include transition2;
+}
+
+
+/***** MEDIA QUERIES *****/
+
+@media only screen and (min-width: 768px) {
+  .welcome {
+    font-size: 72px;
+  }
+
+  .welcome-name {
+    font-size: 64px;
+  }
+
+  .logo {
+    max-width: 40%;
+    padding: 15px 75px 15px;
+  }
+
+  .banner-1 {
+    padding: 300px 250px;
+  }
+
+  .banner-2 {
+    padding: 100px 50px 100px 200px;
+  }
+
+  .description {
+    padding: 80px 60px;
+  }
+
+  .reviews-title {
+    width: 100%;
+  }
+
+  .reviews {
+    padding: 80px 50px 50px 80px;
+  }
+
+  .icon {
+    max-width: 6%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    max-width: 25%;
+  }
+
+  .description {
+    padding: 150px;
+  }
+
+  .banner-2 {
+    padding: 200px 200px 200px 500px;
+  }
+
+  .features {
+    padding: 50px 0 0;
+  }
+
+  .reviews {
+    min-height: 400px;
+  }
+
+  .carousel {
+    padding: 20px 10px;
+  }
+
+  .carousel-item {
+    padding: 25px 50px;
+  }
+
+  .carousel-item p {
+    padding: 5px 100px;
+  }
+
+  .icon {
+    max-width: 5%;
+  }
+
+}
